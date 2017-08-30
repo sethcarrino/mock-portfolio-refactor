@@ -1,9 +1,9 @@
 import React, {Component} from 'react';
 
-import { Link } from 'react-router-dom';
+import {NavLink} from 'react-router-dom';
 
 export default class BaseLayout extends Component {
-  render(){
+  render() {
 
     return (
       <div>
@@ -12,16 +12,22 @@ export default class BaseLayout extends Component {
             <div className="nav-bar">
               <ul className="navbar-nav">
                 <li className="nav-link logo-title">
-                  <Link to="/">Seth Carrino</Link>
+                  <NavLink to="/" activeClassName="selected">Seth Carrino</NavLink>
                 </li>
                 <li className="nav-link">
-                  <Link to="/">Home</Link>
+                  <NavLink to="/" activeClassName="selected">Home</NavLink>
                 </li>
                 <li className="nav-link">
-                  <Link to="/about">About</Link>
+                  <NavLink to="/about" activeClassName="selected">About</NavLink>
                 </li>
                 <li className="nav-link">
-                  <Link to="/portfolio">Portfolio</Link>
+                  <NavLink to="/portfolio" activeClassName="selected">Portfolio</NavLink>
+                </li>
+                <li className="nav-link">
+                  <NavLink to="/references" activeClassName="selected">References</NavLink>
+                </li>
+                <li className="nav-link">
+                  <NavLink to="/contact" activeClassName="selected">Contact</NavLink>
                 </li>
               </ul>
             </div>
@@ -31,7 +37,8 @@ export default class BaseLayout extends Component {
         {this.props.children}
         <footer className="col-lg-11 footer">
           <span>
-             Copyright 2017. All rights Reserved | Follow @sethcarrino on <a href="http://twitetr.com/sethcarrino">Twitter</a>
+            Copyright 2017. All rights Reserved | Follow @sethcarrino on
+            <a href="http://twitetr.com/sethcarrino">Twitter</a>
           </span>
         </footer>
       </div>
