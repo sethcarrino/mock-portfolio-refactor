@@ -1,10 +1,23 @@
-.App {
-  text-align: center;
+/*************
+Main Styling
+**************/
+
+nav a {
+  text-decoration: none;
+  padding-right: 2em;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+nav a:hover {
+  text-decoration: none;
+}
+
+/*************
+App Styling
+**************/
+
+
+.App {
+  text-align: center;
 }
 
 .App-header {
@@ -18,7 +31,57 @@
   font-size: large;
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+
+
+/*************
+Navigation Styling
+**************/
+
+.navbar-nav {
+  display: flex;
+  flex-direction: row;
+  padding-left: 2em;
+}
+
+.navbar-header {
+  width: 100%;
+  background-color: white;
+}
+
+/*************
+Home Styling
+**************/
+
+.jumbotron {
+  height: 400px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background-image: url('../bg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.title, .sub-title {
+  color: white;
+  text-transform: uppercase;
+}
+
+/*************
+About Styling
+**************/
+
+.about-content {
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+/*************
+Footer Styling
+**************/
+
+.footer {
+  padding-left: 2em;
 }
