@@ -1,2 +1,2 @@
-# Mock Portfolio
-> Week 10 - Day 3 Project - using React and React Router to create a mock portfolio website.
+# Mock Portfolio Refactor
+> Week 10 - Day 4 Project - using the project from the previous day, refactor your components to encompass the knowledge from today's lessons.
